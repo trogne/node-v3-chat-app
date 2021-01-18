@@ -184,23 +184,17 @@ button:disabled {
 
 
 /* my add */
-.watermark {
-	/* width: 900px; */
-	height: 500px;
-	display: block;
-	position: relative;
-}
-
-.watermark::after {
+.chat__messages::after {
 	content: '';
-	background: url(sr.jpg);
+	background: url('/img/sr.jpg'), url('/img/sr2.jpg');
 	opacity: 0.4;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
 	position: absolute;
-	z-index: -1;
-	background-repeat: no-repeat;
-	background-size: 500px 500px;
+    z-index: -1;
+    background-position: bottom right, top right;
+	background-repeat: repeat no-repeat;
+	background-size: 75% 50%;
 }
